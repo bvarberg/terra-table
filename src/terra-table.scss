@@ -96,6 +96,12 @@
       vertical-align: bottom;
     }
 
+    tbody th {
+      @include terra-text-align-end;
+
+      background-color: $terra-table-row-th-background-color;
+    }
+
     tfoot tr {
       @include terra-text-align-start;
 
@@ -126,6 +132,10 @@
   @media screen and (min-width: $terra-small-breakpoint) {
     tbody tr:nth-of-type(even) {
       background-color: $terra-table-row-striped-background-color;
+    }
+
+    tbody tr:nth-of-type(even) th {
+      background-color: $terra-table-row-striped-th-background-color;
     }
   }
 }
