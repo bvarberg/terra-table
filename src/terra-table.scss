@@ -133,7 +133,9 @@
     tbody tr:nth-of-type(even) {
       background-color: $terra-table-row-striped-background-color;
     }
-
+    
+    /* Compound selector depth required for specificity */
+    /* stylelint-disable-next-line selector-max-compound-selectors */
     tbody tr:nth-of-type(even) th {
       background-color: $terra-table-row-striped-th-background-color;
     }
